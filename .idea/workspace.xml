@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2717cc25-5a49-4f46-acc1-006d56532f3f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/aor-rich-text-input/package.json" afterPath="$PROJECT_DIR$/packages/aor-rich-text-input/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/packages/aor-rich-text-input/src/RichTextInput.css" afterPath="$PROJECT_DIR$/packages/aor-rich-text-input/src/RichTextInput.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -169,7 +167,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1513920576150</updated>
-      <workItem from="1513920577342" duration="2635000" />
+      <workItem from="1513920577342" duration="2868000" />
     </task>
     <task id="LOCAL-00001" summary="fixes">
       <created>1513921097745</created>
@@ -234,11 +232,18 @@
       <option name="project" value="LOCAL" />
       <updated>1513923064322</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="final">
+      <created>1513923236413</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1513923236413</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2635000" />
+    <option name="totallyTimeSpent" value="2868000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -301,7 +306,8 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="fixes" />
     <MESSAGE value="travis ci" />
-    <option name="LAST_COMMIT_MESSAGE" value="travis ci" />
+    <MESSAGE value="final" />
+    <option name="LAST_COMMIT_MESSAGE" value="final" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
