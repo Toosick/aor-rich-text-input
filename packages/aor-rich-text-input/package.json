@@ -1,7 +1,6 @@
 {
   "name": "@iolap/aor-rich-text-input",
   "version": "1.0.7",
-  "private": true,
   "description": "<RichTextInput> component for admin-on-rest, useful for editing HTML code in admin GUIs.",
   "main": "lib/index.js",
   "scripts": {
@@ -46,5 +45,8 @@
     "prop-types": "~15.5.7",
     "quill": "~1.1.9",
     "react": "~15.5.4"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
