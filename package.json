@@ -1,5 +1,6 @@
 {
   "name": "@iolap/aor-rich-text-input",
+  "version": "1.0.8",
   "devDependencies": {
     "lerna": "2.0.0-rc.5"
   }
