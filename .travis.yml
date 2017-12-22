@@ -1,0 +1,31 @@
+language: node_js
+
+node_js:
+    - "8.0.0"
+
+env:
+    global:
+        - NODE_ENV=test
+
+dist: trusty
+
+cache:
+    yarn: true
+    directories:
+        - node_modules
+
+before_install:
+    - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+    - git config credential.helper "store --file=.git/credentials"
+    - echo "https://${GITHUB_TOKEN}:@github.com" > .git/credentials
+    - npm install -g yarn
+
+install:
+    - yarn
+    - make --silent install
+
+before_script:
+  - git checkout master
+  - lerna updated --json
+script:
+  - lerna publish -m "%s [ci skip]" --conventional-commits --yes --cd-version=patch --force-publish=*
