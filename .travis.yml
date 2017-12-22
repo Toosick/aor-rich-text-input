@@ -10,18 +10,20 @@ env:
 dist: trusty
 
 cache:
-    yarn: true
-    directories:
-        - node_modules
+  yarn: true
+  directories:
+      - node_modules
 
 before_install:
-    - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
-    - git config credential.helper "store --file=.git/credentials"
-    - echo "https://${GITHUB_TOKEN}:@github.com" > .git/credentials
-    - npm install -g yarn
+  - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+  - git config credential.helper "store --file=.git/credentials"
+  - echo "https://${GITHUB_TOKEN}:@github.com" > .git/credentials
+  - npm install -g yarn
 
 install:
-    - make --silent install
+  - yarn
+  - ./node_modules/.bin/lerna bootstrap
+  - cd ./packages/aor-rich-text-input && make build
 
 before_script:
   - git checkout master
