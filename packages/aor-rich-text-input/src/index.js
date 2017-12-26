@@ -22,7 +22,7 @@ class RichTextInput extends Component {
         this.quill.pasteHTML(value);
 
         this.editor = this.divRef.querySelector('.ql-editor');
-        this.quill.on('text-change', this.onTextChange);
+        this.quill.on('text-change', debounce(this.onTextChange, 500));
     }
 
     componentWillUnmount() {
