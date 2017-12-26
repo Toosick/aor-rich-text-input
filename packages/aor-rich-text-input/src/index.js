@@ -22,7 +22,7 @@ class RichTextInput extends Component {
         this.quill.pasteHTML(value);
 
         this.editor = this.divRef.querySelector('.ql-editor');
-        this.quill.on('text-change', debounce(this.onTextChange, 500));
+        this.quill.on('text-change', this.onTextChange);
     }
 
     componentWillUnmount() {
@@ -38,11 +38,11 @@ class RichTextInput extends Component {
         this.divRef = ref;
     }
 
-    componentWillReceiveProps(nextProps) {
-        if (nextProps.input.value !== this.props.input.value) {
-            this.quill.pasteHTML(nextProps.input.value);
-        }
-    }
+    // componentWillReceiveProps(nextProps) {
+    //     if (nextProps.input.value !== this.props.input.value) {
+    //         this.quill.pasteHTML(nextProps.input.value);
+    //     }
+    // }
 
     render() {
         return <div className='aor-rich-text-input'>
