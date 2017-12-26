@@ -22,7 +22,8 @@ before_install:
 
 install:
   - yarn
-  - make --silent install
+  - ./node_modules/.bin/lerna bootstrap
+  - cd ./packages/aor-rich-text-input && make build
 
 before_script:
   - git checkout master
